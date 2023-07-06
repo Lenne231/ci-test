@@ -1,4 +1,4 @@
-name: pr-deployment
+name: deploy-pr
 
 on:
   pull_request:
@@ -6,7 +6,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: needs.deploy-check.outputs.triggered == 'true'
     steps:
       - name: get pull request ref
         id: get_pull_request_ref
