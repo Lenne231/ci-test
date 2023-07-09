@@ -2,15 +2,12 @@ name: deploy-pr
 
 on:
   pull_request:
+    types: [closed]
 
 jobs:
 
-  deploy:
+  tear-down:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
         run: echo "Step 1"
-
-
-
-
