@@ -3,14 +3,13 @@ name: deploy-pr
 on:
   pull_request:
 
-
-
 jobs:
-
 
   deploy:
     runs-on: ubuntu-latest
-
+    steps:
+      - name: Step 1
+        run: echo "Step 1"
 
 
 
